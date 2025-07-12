@@ -59,7 +59,7 @@ const projectsData = [
     id: 4,
     title: "BlogLife",
     description: "A full-featured blog using Django and React.js to create and manage content securely.",
-    link: "https://your-project4-link.com",
+    link: "https://bloglife-8mqb.onrender.com/",
     tags: [
       { name: "Django", color: "bg-blue-500/20" },
       { name: "React.js", color: "bg-orange-500/20" },
