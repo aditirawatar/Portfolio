@@ -27,10 +27,10 @@ const projectsData = [
     id: 1,
     title: "Monexis",
     description: "A full-stack finance tracker app (React Native + Express.js) for tracking transactions and investments.",
-    link: "https://monexis-11.vercel.app/",
+    link: "https://monexis-app.vercel.app/",
     tags: [
       { name: "MERN", color: "bg-blue-500/20" },
-      { name: "Firebase", color: "bg-purple-500/20" },
+      { name: "Plaid", color: "bg-purple-500/20" },
       { name: "MongoDB", color: "bg-green-500/20" }
     ]
   },
