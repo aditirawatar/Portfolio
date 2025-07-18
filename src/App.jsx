@@ -256,6 +256,15 @@ function App() {
                   <Mail className="w-5 h-5 hover:text-red-400 transition-colors" />
                 </a>
               </DockIcon>
+              <DockIcon>
+                <a href="https://leetcode.com/u/aditi_rawat_/" target="_blank" rel="noopener noreferrer">
+                <img
+                src="https://leetcode.com/static/images/LeetCode_logo_rvs.png"
+                alt="LeetCode"
+                className="w-5 h-5 hover:brightness-125 transition-transform"
+                />
+                </a>
+              </DockIcon>
             </Dock>
           </div>
           
