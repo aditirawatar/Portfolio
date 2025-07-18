@@ -129,7 +129,7 @@ function App() {
         <Particles />
       </div>
 
-      {/* Sidebar for large screens */}
+     
       <div className="fixed left-0 top-0 h-full w-[35%] flex items-center justify-center z-10 hidden md:flex">
         <div className="w-full max-w-[380px] pl-12">
           <TypingAnimation className="text-5xl font-bold leading-tight">
@@ -195,12 +195,26 @@ function App() {
                   </span>
                 </div>
               </DockIcon>
+              <DockIcon>
+                <div className="relative group">
+                <a href="https://leetcode.com/u/aditi_rawat_/" target="_blank" rel="noopener noreferrer">
+                <img
+                src="https://leetcode.com/static/images/LeetCode_logo_rvs.png"
+                alt="LeetCode"
+                className="w-5 h-5 hover:brightness-125 transition-transform"
+                />
+                </a>
+                <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                Check out my LeetCode!
+                </span>
+                </div>
+              </DockIcon>
             </Dock>
           </div>
         </div>
       </div>
 
-      {/* Navbar for small screens */}
+      
       <div className="md:hidden">
         <nav className="fixed top-0 left-0 w-full bg-black/70 backdrop-blur-md flex justify-center gap-8 py-4 z-20">
           {["About", "Projects", "Skills"].map((item) => {
@@ -244,6 +258,7 @@ function App() {
               </DockIcon>
             </Dock>
           </div>
+          
         </section>
       </div>
 
@@ -255,6 +270,15 @@ function App() {
             <p className="text-lg leading-relaxed">
               I’m a driven full-stack web developer with a strong passion for building scalable, high-quality web applications. From the initial idea to deployment, I take pride in delivering projects that are both visually appealing and technically sound.
             </p>
+            <br />
+            <p className='text-violet-300'>Check out my resume :  <a
+        href="https://drive.google.com/file/d/1oCswPF_3uB62o_xymVXncIUpfaH0eANv/view"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-auto inline-block text-blue-400 hover:underline"
+      >
+        View Resume →
+      </a> </p>
           </motion.div>
         </section>
 
