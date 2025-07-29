@@ -6,6 +6,8 @@ import { Dock, DockIcon } from "@/components/magicui/dock";
 import { Github, Linkedin, Mail } from "lucide-react";
 import { motion } from 'framer-motion';
 import { IconCloud } from "@/components/magicui/icon-cloud";
+import { Marquee } from "@/components/magicui/marquee";
+
 
 const skills = [
   { icon: "react", name: "React" },
@@ -67,32 +69,6 @@ const projectsData = [
     ]
   }
 ];
-
-function ProjectCard({ title, description, link, tags }) {
-  return (
-    <div className="bg-gray-800/50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow flex flex-col justify-between">
-      <div>
-        <h3 className="text-xl font-bold mb-2">{title}</h3>
-        <p className="text-gray-300 mb-4">{description}</p>
-        <div className="flex flex-wrap gap-2 mb-4">
-          {tags.map((tag, index) => (
-            <span key={index} className={`px-2 py-1 rounded ${tag.color} text-sm`}>
-              {tag.name}
-            </span>
-          ))}
-        </div>
-      </div>
-      <a
-        href={link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mt-auto inline-block text-blue-400 hover:underline"
-      >
-        View Project →
-      </a>
-    </div>
-  );
-}
 
 function App() {
   const [activeSection, setActiveSection] = useState('about');
@@ -277,7 +253,7 @@ function App() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="max-w-md w-full text-center">
             <img className="rounded-full w-48 h-48 object-cover mb-6 mx-auto" src={portf2} alt="profile" />
             <p className="text-lg leading-relaxed">
-              I’m a driven full-stack web developer with a strong passion for building scalable, high-quality web applications. From the initial idea to deployment, I take pride in delivering projects that are both visually appealing and technically sound.
+              I'm a driven full-stack web developer with a strong passion for building scalable, high-quality web applications. From the initial idea to deployment, I take pride in delivering projects that are both visually appealing and technically sound.
             </p>
             <br />
             <p className='text-violet-300'>Check out my resume :  <a
@@ -293,11 +269,33 @@ function App() {
 
         <section id="projects" ref={(el) => el && (sections.current[1] = el)} className="min-h-screen flex items-center justify-center p-12">
           <div className="max-w-4xl w-full">
-            <h2 className="text-3xl font-bold mb-8">My Projects</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {projectsData.map((project) => (
-                <ProjectCard key={project.id} {...project} />
-              ))}
+            <h2 className="text-3xl font-bold mb-12 text-center">My Projects</h2>
+            <div className="py-8">
+              <Marquee pauseOnHover className="[--duration:20s]">
+                {projectsData.map((project) => (
+                  <div key={project.id} className="w-[300px] mx-4 bg-gray-800/50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow flex flex-col justify-between h-full">
+                    <div>
+                      <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+                      <p className="text-gray-300 mb-4 text-sm">{project.description}</p>
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {project.tags.map((tag, index) => (
+                          <span key={index} className={`px-2 py-1 rounded ${tag.color} text-xs`}>
+                            {tag.name}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block text-blue-400 hover:underline text-sm"
+                    >
+                      View Project →
+                    </a>
+                  </div>
+                ))}
+              </Marquee>
             </div>
           </div>
         </section>
