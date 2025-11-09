@@ -257,7 +257,7 @@ function App() {
             </p>
             <br />
             <p className='text-violet-300'>Check out my resume :  <a
-        href="https://drive.google.com/file/d/1_fzGnNLoNiYbwjID1WmRoLIiUhQSTnsK/view?usp=sharing"
+        href="https://drive.google.com/file/d/16Msndj7rpo2M-YTyXzMhUkWjgwyIBiO_/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         className="mt-auto inline-block text-blue-400 hover:underline"
