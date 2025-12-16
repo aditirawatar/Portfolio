@@ -51,7 +51,7 @@ const projectsData = [
     id: 3,
     title: "Hand gesture Volume Control",
     description: "A Python app using mediapipe and OpenCV to adjust system volume via hand gestures.",
-    link: "https://drive.google.com/file/d/1WiWNwQ13iVM-OxqpitYowHebaYxfnCqt/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1c4Tyo8vsDY-p_GcS_rMHkX38fU4kSsru/view?usp=sharing",
     tags: [
       { name: "Python", color: "bg-blue-500/20" },
       { name: "mediapipe", color: "bg-red-500/20" }
