@@ -27,10 +27,11 @@ const skills = [
 const projectsData = [
   {
     id: 1,
-    title: "Monexis",
+    title: "Monexis (Active Development)",
     description: "A full-stack finance tracker app (React Native + Express.js) for tracking transactions and investments.",
     link: "https://monexis-app.vercel.app/",
     tags: [
+      { name: "Backend Refactor", color: "bg-red-400/20" },
       { name: "MERN", color: "bg-blue-500/20" },
       { name: "Plaid", color: "bg-purple-500/20" },
       { name: "MongoDB", color: "bg-green-500/20" }
@@ -66,6 +67,16 @@ const projectsData = [
       { name: "Django", color: "bg-blue-500/20" },
       { name: "React.js", color: "bg-orange-500/20" },
       { name: "Auth", color: "bg-teal-500/20" }
+    ]
+  },
+   {
+    id: 5,
+    title: "PolaroidCam",
+    description: "A modern, interactive Polaroid-style camera web application that lets users capture moments, customize layouts, and download their photos as a single polished image",
+    link: "https://polaroid-cam-omega.vercel.app/",
+    tags: [
+      { name: "React + TypeScript", color: "bg-orange-500/20" },
+      { name: "html2canvas", color: "bg-pink-500/20" }
     ]
   }
 ];
